@@ -4,16 +4,16 @@ public class Program
 {
     public static double FindAverage(int [] num)
     {
-        int avg = 0;
+        int average = 0;
         if (num == null || num.Length == 0)
             throw new ArgumentException("You provided an empty array or null array");
 
         for (int i = 0; i < num.Length; i++)
         {
-            avg += num[i];
+            average += num[i];
         }
 
-        return (double) avg /num.Length;
+        return (double) average /num.Length;
     }
 
     public static int FindMax(int[] num)
